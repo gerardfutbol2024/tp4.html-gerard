@@ -1,0 +1,139 @@
+/* General */
+body {
+    margin: 0; /* Elimina el margen predeterminado del navegador */
+    font-family: 'Press Start 2P', cursive; /* Fuente pixelart retro para el texto general */
+    background-color: #f0f8ff; /* Fondo de color azul claro, estilo manual escolar */
+    color: #333; /* Color de texto oscuro para una buena legibilidad */
+    line-height: 1.6; /* Espaciado de líneas para mejorar la lectura */
+    display: flex; /* Usa Flexbox para el diseño */
+    flex-direction: column; /* Organiza los elementos en columna (de arriba hacia abajo) */
+    align-items: center; /* Centra el contenido de la página */
+}
+
+/* Fuente para los títulos (h1, h2, h3) */
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif; /* Fuente diferente para los títulos (más moderna y legible) */
+    color: #005fa3; /* Color azul oscuro para los títulos */
+    font-weight: bold; /* Resalta los títulos con negrita */
+}
+
+/* Encabezado principal */
+.header-principal {
+    text-align: center; /* Centra el texto del encabezado */
+    background-color: #007acc; /* Color azul más brillante para el fondo del encabezado */
+    color: #fff; /* Color blanco para el texto del encabezado */
+    padding: 20px; /* Espaciado alrededor del contenido */
+    width: 100%; /* Hace que el encabezado ocupe todo el ancho de la página */
+}
+
+.titulo-principal {
+    font-size: 2rem; /* Tamaño grande para el título principal */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+.subtitulo-principal {
+    font-size: 1.2rem; /* Tamaño de fuente un poco más pequeño para el subtítulo */
+    margin-top: 10px; /* Agrega un margen superior al subtítulo */
+}
+
+/* Barra de navegación */
+.barra-navegacion {
+    width: 100%; /* Hace que la barra de navegación ocupe todo el ancho de la página */
+    background-color: #005fa3; /* Color azul oscuro para el fondo de la barra */
+    text-align: center; /* Centra el contenido de la barra */
+    padding: 10px 0; /* Espaciado arriba y abajo de la barra */
+}
+
+.menu-navegacion {
+    list-style: none; /* Elimina los puntos de las listas */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el padding predeterminado */
+    display: flex; /* Usa Flexbox para organizar los elementos en fila */
+    justify-content: center; /* Centra los elementos de la barra */
+    gap: 20px; /* Espacio entre los elementos del menú */
+}
+
+.enlace-navegacion {
+    color: #fff; /* Color blanco para los enlaces */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+    font-weight: bold; /* Hace los enlaces en negrita */
+    padding: 10px 15px; /* Espaciado alrededor de los enlaces */
+    border: 2px solid transparent; /* Agrega un borde invisible por defecto */
+    transition: 0.3s; /* Transición suave cuando se pasa el ratón sobre el enlace */
+}
+
+.enlace-navegacion:hover {
+    background-color: #fff; /* Fondo blanco cuando se pasa el ratón */
+    color: #005fa3; /* Color azul para el texto del enlace */
+    border-color: #007acc; /* Borde azul al pasar el ratón */
+}
+
+/* Secciones principales */
+.seccion-introduccion,
+.seccion-consejos {
+    width: 90%; /* Ancho del 90% de la página */
+    max-width: 1200px; /* Ancho máximo para que no se estire demasiado */
+    margin: 20px auto; /* Centra la sección y le da un margen superior e inferior */
+    display: flex; /* Usa Flexbox para organizar el contenido */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    gap: 20px; /* Espacio entre los elementos dentro de la sección */
+}
+
+.titulo-seccion {
+    text-align: center; /* Centra el título de la sección */
+    font-size: 1.5rem; /* Tamaño de fuente mediano para el título de la sección */
+    color: #007acc; /* Color azul para el título */
+}
+
+.articulo-consejo {
+    display: flex; /* Usa Flexbox para organizar los artículos */
+    flex-direction: column; /* Organiza los artículos en columnas */
+    gap: 10px; /* Espacio entre los elementos del artículo */
+    padding: 20px; /* Espaciado dentro del artículo */
+    border: 2px dashed #007acc; /* Borde punteado de color azul para resaltar el artículo */
+    background-color: #f0f8ff; /* Fondo azul claro para los artículos */
+}
+
+.texto-parrafo {
+    margin: 0; /* Elimina el margen predeterminado de los párrafos */
+}
+
+.lista-consejos {
+    margin-top: 10px; /* Agrega un margen superior */
+    padding-left: 20px; /* Agrega un padding izquierdo para sangrar la lista */
+}
+
+.lista-consejos li {
+    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+}
+
+/* Botones */
+.boton-enlace {
+    display: inline-block; /* Los botones se muestran como bloques en línea */
+    margin: 20px auto; /* Centra el botón con margen alrededor */
+    padding: 10px 20px; /* Espaciado dentro del botón */
+    background-color: #005fa3; /* Fondo azul oscuro para el botón */
+    color: #fff; /* Texto blanco dentro del botón */
+    font-weight: bold; /* Texto en negrita */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: 0.3s; /* Transición suave para cambios */
+    text-align: center; /* Centra el texto dentro del botón */
+}
+
+.boton-enlace:hover {
+    background-color: #007acc; /* Fondo azul más brillante al pasar el ratón */
+}
+
+/* Formulario de contacto */
+.seccion-contacto {
+    width: 90%; /* Ancho del 90% de la página */
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 20px auto; /* Centra el formulario y le da un margen superior e inferior */
+    text-align: center; /* Centra el texto dentro del formulario */
+}
+
+.formulario-contacto {
+    display: flex; /* Usa Flexbox para organizar los campos}
+    }
+}
