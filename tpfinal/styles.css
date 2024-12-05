@@ -32,7 +32,7 @@ h1, h2, h3 {
 }
 
 .subtitulo-principal {
-    font-size: 1.2rem; /* Tamaño de fuente un poco más pequeño para el subtítulo */
+    font-size: 1.5rem; /* Tamaño de fuente un poco más pequeño para el subtítulo */
     margin-top: 10px; /* Agrega un margen superior al subtítulo */
 }
 
